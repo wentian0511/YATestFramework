@@ -5,7 +5,11 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
+<<<<<<< Updated upstream
 	<string>D11E9D70-7305-470A-A49F-643545BC0C9C</string>
+=======
+	<string>A85DB72F-D1FA-46DF-9691-956009687E54</string>
+>>>>>>> Stashed changes
 	<key>IDESourceControlProjectName</key>
 	<string>YATestFramework</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>

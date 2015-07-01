@@ -20,8 +20,6 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    NSLog(@"%@",[YATools unixTimeTransforTimeF:1435327803 timeFormat:@"yyyy-MM-dd HH:mm:ss"]);
-    NSLog(@"%@",[YATools unixTimeTransforTimeS:@"1435327803" timeFormat:@"yyyy-MM-dd HH:mm:ss"]);
     
     
     

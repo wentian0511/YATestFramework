@@ -20,6 +20,7 @@
 		24E87F7E1B2FC7CA0004A9C2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24E87F7C1B2FC7CA0004A9C2 /* LaunchScreen.xib */; };
 		24E87F8A1B2FC7CA0004A9C2 /* YATestFrameworkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 24E87F891B2FC7CA0004A9C2 /* YATestFrameworkTests.m */; };
 		24E87FA91B2FC8B40004A9C2 /* YAWebImageDownload.m in Sources */ = {isa = PBXBuildFile; fileRef = 24E87FA81B2FC8B40004A9C2 /* YAWebImageDownload.m */; };
+		FC48A8C61B3EA26D00CA9E2D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC48A8C51B3EA26D00CA9E2D /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		24E87F891B2FC7CA0004A9C2 /* YATestFrameworkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YATestFrameworkTests.m; sourceTree = "<group>"; };
 		24E87FA71B2FC8B40004A9C2 /* YAWebImageDownload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YAWebImageDownload.h; sourceTree = "<group>"; };
 		24E87FA81B2FC8B40004A9C2 /* YAWebImageDownload.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YAWebImageDownload.m; sourceTree = "<group>"; };
+		FC48A8C51B3EA26D00CA9E2D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC48A8C61B3EA26D00CA9E2D /* QuartzCore.framework in Frameworks */,
 				24798B121B3CE4B500A9ECB0 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,6 +141,7 @@
 		24E87F611B2FC7CA0004A9C2 = {
 			isa = PBXGroup;
 			children = (
+				FC48A8C51B3EA26D00CA9E2D /* QuartzCore.framework */,
 				24798B111B3CE4B500A9ECB0 /* CoreLocation.framework */,
 				247D4DD71B3C3AEF00EBE40B /* YALocationInfo */,
 				24686E451B390964003210A3 /* YATools */,
