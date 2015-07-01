@@ -25,5 +25,7 @@
 #define YA_IOS_VERSION_LessThan(__v) (YA_IOS_VERSION < __v) // 小于
 #define YA_IOS_VERSION_MoreThan(__v) (YA_IOS_VERSION > __v) // 大于
 
+/*********** 获取屏幕尺寸 ***********/
 
-
+#define YA_SCREEN_HEIGHT [[UIScreen mainScreen]bounds].size.height
+#define YA_SCREEN_WIDTH  [[UIScreen mainScreen]bounds].size.width
