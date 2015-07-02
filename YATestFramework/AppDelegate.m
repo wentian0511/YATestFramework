@@ -10,6 +10,7 @@
 
 #import "YATools.h"
 
+
 @interface AppDelegate ()
 
 @end
@@ -23,9 +24,36 @@
     NSLog(@"%@",[YATools unixTimeTransforTimeF:1435327803 timeFormat:@"yyyy-MM-dd HH:mm:ss"]);
     NSLog(@"%@",[YATools unixTimeTransforTimeS:@"1435327803" timeFormat:@"yyyy-MM-dd HH:mm:ss"]);
     
-    
+    [self detectCall];
     
     return YES;
+}
+
+- (void)detectCall {
+    callCenter = [[CTCallCenter alloc] init];
+    callCenter.callEventHandler = ^(CTCall* call) {
+        if (call.callState == CTCallStateDisconnected) {
+            
+            NSLog(@"Call has been disconnected");
+            
+        } else if (call.callState == CTCallStateConnected) {
+            
+            NSLog(@"Call has just been connected");
+            
+        } else if(call.callState == CTCallStateIncoming) {
+            
+            NSLog(@"Call is incoming");
+            
+        } else if (call.callState == CTCallStateDialing) {
+            
+            NSLog(@"call is dialing");
+            
+        } else {
+            
+            NSLog(@"Nothing is done");
+            
+        }
+    };
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

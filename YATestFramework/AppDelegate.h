@@ -8,7 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+#import <CoreTelephony/CTCallCenter.h>
+#import <CoreTelephony/CTCall.h>
+
+@interface AppDelegate : UIResponder <UIApplicationDelegate> {
+
+    CTCallCenter *callCenter;
+    
+}
 
 @property (strong, nonatomic) UIWindow *window;
 

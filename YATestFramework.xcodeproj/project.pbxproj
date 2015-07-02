@@ -10,6 +10,7 @@
 		24686E411B3901E8003210A3 /* NSString+YAHashing.m in Sources */ = {isa = PBXBuildFile; fileRef = 24686E3F1B3901E8003210A3 /* NSString+YAHashing.m */; };
 		24686E441B390260003210A3 /* UIImage+YACheckJudge.m in Sources */ = {isa = PBXBuildFile; fileRef = 24686E431B390260003210A3 /* UIImage+YACheckJudge.m */; };
 		24686E481B390974003210A3 /* YATools.m in Sources */ = {isa = PBXBuildFile; fileRef = 24686E471B390974003210A3 /* YATools.m */; };
+		2474F7DC1B44DAE9003E3DDF /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2474F7DB1B44DAE9003E3DDF /* CoreTelephony.framework */; };
 		24798B121B3CE4B500A9ECB0 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24798B111B3CE4B500A9ECB0 /* CoreLocation.framework */; };
 		247D4DDA1B3C3B6400EBE40B /* YALocationInfor.m in Sources */ = {isa = PBXBuildFile; fileRef = 247D4DD91B3C3B6400EBE40B /* YALocationInfor.m */; };
 		24E87F701B2FC7CA0004A9C2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 24E87F6F1B2FC7CA0004A9C2 /* main.m */; };
@@ -39,6 +40,7 @@
 		24686E431B390260003210A3 /* UIImage+YACheckJudge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+YACheckJudge.m"; sourceTree = "<group>"; };
 		24686E461B390974003210A3 /* YATools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YATools.h; sourceTree = "<group>"; };
 		24686E471B390974003210A3 /* YATools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YATools.m; sourceTree = "<group>"; };
+		2474F7DB1B44DAE9003E3DDF /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		24798B111B3CE4B500A9ECB0 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		24798B131B3CECD500A9ECB0 /* YATestFramework-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YATestFramework-Prefix.pch"; sourceTree = "<group>"; };
 		247D4DD81B3C3B6400EBE40B /* YALocationInfor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YALocationInfor.h; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2474F7DC1B44DAE9003E3DDF /* CoreTelephony.framework in Frameworks */,
 				24798B121B3CE4B500A9ECB0 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,6 +141,7 @@
 		24E87F611B2FC7CA0004A9C2 = {
 			isa = PBXGroup;
 			children = (
+				2474F7DB1B44DAE9003E3DDF /* CoreTelephony.framework */,
 				24798B111B3CE4B500A9ECB0 /* CoreLocation.framework */,
 				247D4DD71B3C3AEF00EBE40B /* YALocationInfo */,
 				24686E451B390964003210A3 /* YATools */,
