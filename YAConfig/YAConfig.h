@@ -13,19 +13,28 @@
 #endif
 
 
-/*********** 获取系统的版本号 ***********/
+/* 获取系统的版本号 */
 #define YA_IOS_VERSION ([[[UIDevice currentDevice] systemVersion] floatValue])
 
 
-/*********** 判断版本号 ***********/
-
+/* 判断版本号 */
 #define YA_IOS_VERSION_NotLessThan(__v) (YA_IOS_VERSION >= __v) // 不小于
 #define YA_IOS_VERSION_NotMoreThan(__v) (YA_IOS_VERSION <= __v) // 不大于
+#define YA_IOS_VERSION_LessThan(__v)    (YA_IOS_VERSION < __v)  // 小于
+#define YA_IOS_VERSION_MoreThan(__v)    (YA_IOS_VERSION > __v)  // 大于
 
-#define YA_IOS_VERSION_LessThan(__v) (YA_IOS_VERSION < __v) // 小于
-#define YA_IOS_VERSION_MoreThan(__v) (YA_IOS_VERSION > __v) // 大于
+/* 获取屏幕尺寸 */
+#define YA_SCREEN_HEIGHT ([[UIScreen mainScreen]bounds].size.height)
+#define YA_SCREEN_WIDTH  ([[UIScreen mainScreen]bounds].size.width)
 
-/*********** 获取屏幕尺寸 ***********/
+/* release & autorelease */
+#if __has_feature(objc_arc)
+#define YA_release(obj)
+#define YA_autorelease(obj)
+#else
+#define YA_release(obj)     [obj release]
+#define YA_autorelease(obj) [obj autorelease]
+#endif
 
-#define YA_SCREEN_HEIGHT [[UIScreen mainScreen]bounds].size.height
-#define YA_SCREEN_WIDTH  [[UIScreen mainScreen]bounds].size.width
+
+
