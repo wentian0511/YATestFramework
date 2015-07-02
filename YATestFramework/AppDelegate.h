@@ -12,12 +12,12 @@
 #import <CoreTelephony/CTCall.h>
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate> {
-
-    CTCallCenter *callCenter;
     
 }
 
 @property (strong, nonatomic) UIWindow *window;
+
+@property (strong, nonatomic) CTCallCenter *callCenter;
 
 
 @end

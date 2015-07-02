@@ -28,8 +28,8 @@
 }
 
 - (void)detectCall {
-    callCenter = [[CTCallCenter alloc] init];
-    callCenter.callEventHandler = ^(CTCall* call) {
+    self.callCenter = [[CTCallCenter alloc] init];
+    self.callCenter.callEventHandler = ^(CTCall* call) {
         if (call.callState == CTCallStateDisconnected) {
             
             NSLog(@"Call has been disconnected");
@@ -52,6 +52,7 @@
             
         }
     };
+    NSLog(@"%@",self.callCenter);
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

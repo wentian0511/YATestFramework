@@ -71,11 +71,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-<<<<<<< HEAD
 				2474F7DC1B44DAE9003E3DDF /* CoreTelephony.framework in Frameworks */,
-=======
 				FC48A8C61B3EA26D00CA9E2D /* QuartzCore.framework in Frameworks */,
->>>>>>> origin/master
 				24798B121B3CE4B500A9ECB0 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,11 +144,8 @@
 		24E87F611B2FC7CA0004A9C2 = {
 			isa = PBXGroup;
 			children = (
-<<<<<<< HEAD
 				2474F7DB1B44DAE9003E3DDF /* CoreTelephony.framework */,
-=======
 				FC48A8C51B3EA26D00CA9E2D /* QuartzCore.framework */,
->>>>>>> origin/master
 				24798B111B3CE4B500A9ECB0 /* CoreLocation.framework */,
 				247D4DD71B3C3AEF00EBE40B /* YALocationInfo */,
 				24686E451B390964003210A3 /* YATools */,
