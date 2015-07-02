@@ -38,6 +38,7 @@
     subScrollView.contentSize = CGSizeMake(YA_SCREEN_WIDTH*3, 400);
     subScrollView.pagingEnabled = YES;
     subScrollView.backgroundColor = [UIColor colorWithRed:0.8 green:0.7 blue:0.5 alpha:1.0];
+    subScrollView.bounces = NO;
     [superScrollView addSubview:subScrollView];
     
     
