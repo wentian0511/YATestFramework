@@ -12,16 +12,23 @@
 
 #endif
 
+/* 获取设备的型号 */
+#define YA_DEVICE_MODEL ([UIDevice currentDevice].model) // e.g. @"iPhone", @"iPod touch"
+
+/* 获取该设备的名字 */
+#define YA_DEVICE_NAME ([UIDevice currentDevice].name) // e.g. "My iPhone"
+
+/* 获取系统的名称 */
+#define YA_SYSTEM_NAEM ([UIDevice currentDevice].systemName) // e.g. @"iOS"
 
 /* 获取系统的版本号 */
-#define YA_IOS_VERSION ([[[UIDevice currentDevice] systemVersion] floatValue])
-
+#define YA_SYSTEM_VERSION ([[[UIDevice currentDevice] systemVersion] floatValue])
 
 /* 判断版本号 */
-#define YA_IOS_VERSION_NotLessThan(__v) (YA_IOS_VERSION >= __v) // 不小于
-#define YA_IOS_VERSION_NotMoreThan(__v) (YA_IOS_VERSION <= __v) // 不大于
-#define YA_IOS_VERSION_LessThan(__v)    (YA_IOS_VERSION < __v)  // 小于
-#define YA_IOS_VERSION_MoreThan(__v)    (YA_IOS_VERSION > __v)  // 大于
+#define YA_SYSTEM_VERSION_NotLessThan(__v) (YA_SYSTEM_VERSION >= __v) // 不小于
+#define YA_SYSTEM_VERSION_NotMoreThan(__v) (YA_SYSTEM_VERSION <= __v) // 不大于
+#define YA_SYSTEM_VERSION_LessThan(__v)    (YA_SYSTEM_VERSION < __v)  // 小于
+#define YA_SYSTEM_VERSION_MoreThan(__v)    (YA_SYSTEM_VERSION > __v)  // 大于
 
 /* 获取屏幕尺寸 */
 #define YA_SCREEN_HEIGHT ([[UIScreen mainScreen]bounds].size.height)

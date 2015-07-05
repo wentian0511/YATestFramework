@@ -19,7 +19,7 @@ typedef enum {
 
 @interface YATools : NSObject
 
-/**************** UIImage ****************/
+/* UIImage */
 /**
  *	@brief	判断图片是什么格式
  *
@@ -39,12 +39,12 @@ typedef enum {
 + (CheckImageFormat)checkImageFormatFromPath:(NSString *)imagePath;
 
 
-/**************** File ****************/
+/* 文件操作 */
 
 + (BOOL)createFolder:(NSString *)folderPath;
 
 
-/**************** Calculation ****************/
+/* 计算两坐标点之间的距离 */
 
 /**
  *	@brief	计算两坐标点之间的距离
@@ -61,7 +61,7 @@ typedef enum {
                            :(double)endCoorlat
                            :(double)endCoorlon;
 
-/**************** Time ****************/
+/* 时间和时间戳之间相互转换 */
 
 /**
  *	@brief	时间戳转时间
@@ -85,6 +85,9 @@ typedef enum {
 + (NSString *)unixTimeTransforTimeS:(NSString *)unixTime
                          timeFormat:(NSString *)timeFormat;
 
+
+/* 判断设备是否越狱 */
++ (BOOL)isJailbroken;
 
 
 @end

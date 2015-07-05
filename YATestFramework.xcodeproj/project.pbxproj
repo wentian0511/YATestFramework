@@ -63,6 +63,7 @@
 		24E87F891B2FC7CA0004A9C2 /* YATestFrameworkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YATestFrameworkTests.m; sourceTree = "<group>"; };
 		24E87FA71B2FC8B40004A9C2 /* YAWebImageDownload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YAWebImageDownload.h; sourceTree = "<group>"; };
 		24E87FA81B2FC8B40004A9C2 /* YAWebImageDownload.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YAWebImageDownload.m; sourceTree = "<group>"; };
+		FC33FF401B48D0FA0075893C /* YAGlobalMacroDefinition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YAGlobalMacroDefinition.h; sourceTree = "<group>"; };
 		FC48A8C51B3EA26D00CA9E2D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -137,6 +138,7 @@
 			children = (
 				24AE69261B33CC8F008AC9C1 /* YAConfig.h */,
 				24AE69271B33CD24008AC9C1 /* YAMethodNotes.h */,
+				FC33FF401B48D0FA0075893C /* YAGlobalMacroDefinition.h */,
 			);
 			path = YAConfig;
 			sourceTree = "<group>";
