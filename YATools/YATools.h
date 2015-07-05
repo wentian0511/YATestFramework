@@ -85,8 +85,11 @@ typedef enum {
 + (NSString *)unixTimeTransforTimeS:(NSString *)unixTime
                          timeFormat:(NSString *)timeFormat;
 
-
-/* 判断设备是否越狱 */
+/**
+ *	@brief	判断设备是否越狱
+ *
+ *	@return	YES 已越狱 NO 未越狱
+ */
 + (BOOL)isJailbroken;
 
 
